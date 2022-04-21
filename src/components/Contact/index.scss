@@ -1,0 +1,144 @@
+.contact-page {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 33px;
+    color: #115173;
+    animation: fadeInDown 2s;
+  }
+  p {
+    color: black;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: 'Exo 2', sans-serif;
+    animation: fadeInDown 2s;
+    @media screen and (max-width:  650px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.contact-form {
+  width: 100%;
+  margin-top: 30px;
+  
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 4s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #0b0b0b;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #000000;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+    
+  }
+
+  .flat-button {
+    color: #000000;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #000000;
+    float: left;
+    border-radius: 4px;
+    background: 0 0;
+    font-weight: 1000;
+    font-family: 'Courgette', cursive;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+    &:hover {
+      cursor: pointer;
+      font-size: 15px;
+    }
+  }
+}
+
+.map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 53%;
+  height: 115%;
+  margin-top: -3%;
+}
+
+.leaflet-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.info-map {
+  position: absolute;
+  background: #000;
+  top: 50px;
+  right: 30%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+
+  span {
+    font-size: 16px;
+
+    span {
+      color: #ffd700;
+    }
+  }
+}

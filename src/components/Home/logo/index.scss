@@ -1,0 +1,98 @@
+.imege {
+  @media screen and (max-width:  650px) {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+  .buttons {
+    @media screen and (max-width: 650px) {
+      margin-top: 3%;
+      display: flex;
+      position: relative;
+      grid-template-columns: 1fr;
+      margin-left: 37%;
+      width: 70%;
+    }
+  }
+}
+.logo-container {
+  margin-left: 1%;
+  margin-top: 1%;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+  right: auto;
+  animation: slideInLeft 2s;
+  width: 40%;
+  height: 85%;
+  @media screen and (max-width:  650px) {
+    margin-top: 3%;
+    position: relative;
+      left: 8%;
+    width: 75%;
+  }
+
+  img {
+    display: flex;
+    opacity: 10;
+    height: 100%;
+    @media screen and (max-width: 650px) {
+      height: 500px;
+    }
+  }
+  .solid-logo {
+    left: 0%;
+    width: 100%;
+    border: 2px solid;
+    border-radius: 45%;
+  }
+}
+
+.upper {
+  display: flex;
+  position: absolute;
+  @media screen and (max-width:  650px) {
+    display: none;
+
+    left: 15%;
+    width: 70%;
+  }
+  right: 21%;
+  top: 40%;
+  animation: slideInLeft 2s;
+  img {
+    cursor: pointer;
+    width: 10%;
+    &:hover {
+    }
+  }
+}
+
+.upper1 {
+  display: flex;
+  position: absolute;
+  right: 21%;
+  top: 50%;
+  animation: slideInLeft 2s;
+  @media screen and (max-width: 650px) {
+    display: flex;
+    position: absolute;
+
+    right: 30%;
+    width: 70%;
+    height: 100%;
+  }
+  img {
+    cursor: pointer;
+    width: 10%;
+    
+    transform: rotate(180deg);
+    @media screen and (max-width:  650px) {
+      position: absolute;
+      transform: rotate(90deg);
+      margin-left: 7%;
+      width: 25%;
+      content: url('../../../assets/images/change.png');
+    }
+  }
+}
